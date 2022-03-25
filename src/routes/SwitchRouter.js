@@ -2,11 +2,14 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 //pages
+import Home from "../../Pages/Home/Home";
 
 export default function SwitchRouter() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
+    <main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </main>
   );
 }
