@@ -3,10 +3,15 @@ import React, { useState, useEffect } from "react";
 //components
 import PokemonCard from "../PokemonCard/PokemonCard";
 
+//services
+import getAllPokemons from "./../../services/fetch.service";
+
 export default function PokemonCardGenerator() {
   const [pokemons, setPokemons] = useState([]);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    getAllPokemons();
+  }, []);
 
   return (
     <div>
